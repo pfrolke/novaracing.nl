@@ -8,12 +8,17 @@
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^24.9.1",
     "@types/node": "^12.12.67",
-    "@types/react": "^16.9.51",
+    "@types/react": "^16.9.52",
     "@types/react-dom": "^16.9.8",
+    "bootstrap": "^4.5.2",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^4.0.0-next.98",
-    "tailwindcss": "^1.8.13",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
     "typescript": "^3.7.5"
   },
   "scripts": {
@@ -23,13 +28,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "airbnb-typescript"
-    ],
-    "parserOptions": {
-      "project": "tsconfig.json"
-    }
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -43,7 +42,14 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "eslint-config-airbnb-typescript": "^11.0.0"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
   }
 }
