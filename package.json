@@ -12,7 +12,7 @@
     "@types/react-dom": "^16.9.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
+    "react-scripts": "^4.0.0-next.98",
     "tailwindcss": "^1.8.13",
     "typescript": "^3.7.5"
   },
@@ -23,7 +23,13 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "airbnb-typescript"
+    ],
+    "parserOptions": {
+      "project": "tsconfig.json"
+    }
   },
   "browserslist": {
     "production": [
@@ -38,12 +44,6 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.4.0",
-    "@typescript-eslint/parser": "^4.4.0",
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb-typescript": "^11.0.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-react": "^7.21.4",
-    "eslint-plugin-react-hooks": "^4.1.2"
+    "eslint-config-airbnb-typescript": "^11.0.0"
   }
 }
