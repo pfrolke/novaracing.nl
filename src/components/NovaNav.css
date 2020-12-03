@@ -1,0 +1,19 @@
+.navbar {
+  top: -100px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-timing-function: ease-out;
+  animation: slide 0.5s forwards;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: 0;
+  }
+}

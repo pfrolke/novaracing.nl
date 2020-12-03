@@ -1,4 +1,17 @@
-// Override default variables before the import
-$body-bg: #000;
+// Nova huisstijl colors
+$blue: #3c6997;
+$gray-800: #171717;
+$orange: #fe9000;
+$yellow: #ffdd4a;
+$cyan: #6ec1bb;
+
+// set all other colors to white?
+$indigo: #ffffff;
+$purple: #ffffff;
+$pink: #ffffff;
+$red: #ffffff;
+$green: #ffffff;
+$teal: #ffffff;
+
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";

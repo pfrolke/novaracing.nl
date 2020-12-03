@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+.heroContainer {
+  padding: 0;
+  height: calc(100vh - 66px);
+  font-family: Roboto;
+  color: #fafafa;
+}
+
+.polkadots {
+  position: absolute;
+  background-image: url("/polkadots.svg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  width: 100%;
+  height: 1000vh;
+}
+
+.herotext {
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stand {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.herobutton {
+  border-radius: 0;
+  border-width: 2px;
+}
+
+.triangle-pol {
+  fill: #3c6997;
+}
+
+.motor {
+  position: absolute;
+  top: 5%;
+  height: 90%;
+  width: auto;
+
+  // center horizontally
+  left: 0;
+  right: -100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  animation: mslide 1s linear;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes mslide {
+  to {
+    right: 0%;
+    top: 110%;
+  }
+}
+
+.screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.invis {
+  visibility: hidden;
+  z-index: -1;
+}
+
+.sponsors {
+  background-color: #fafafa;
+  color: #000000;
+}
