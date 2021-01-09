@@ -17,6 +17,16 @@ body {
   padding-top: 66px;
 }
 
+.btn {
+  border-radius: 2px;
+  border-width: 2px;
+  box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
 .custom-switch {
   padding-left: 0;
 }

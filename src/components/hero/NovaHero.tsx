@@ -1,8 +1,10 @@
-import React, { RefObject, useEffect, useLayoutEffect, useRef } from "react";
+import React, { RefObject, useEffect, useRef } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Rellax from "rellax";
-import "./NovaHero.scss";
-import zeromotor from "./zeromotor.png";
+import "./NovaHero.css";
+import zeromotor from "../../resources/zeromotor.png";
+import NovaSponsors from "./NovaSponsors";
+import MotorInfoPage from "./MotorInfoPage";
 
 function NovaHero() {
   const screen2 = useRef<HTMLDivElement>(null);
@@ -21,10 +23,6 @@ function NovaHero() {
       },
       false
     );
-  });
-
-  useLayoutEffect(() => {
-    console.log(screen2.current);
   });
 
   return (
@@ -46,14 +44,35 @@ function NovaHero() {
       <img alt="" className="motor" src={zeromotor}></img>
 
       <div className="screen invis"></div>
-      <div className="screen invis" ref={screen2}></div>
+      <div className="screen" ref={screen2}>
+        <MotorInfoPage />
+      </div>
 
-      <div className="screen sponsors">
-        <Row>
-          <Col sm={4} className="align-self-center">
-            <h2>Our Sponsors</h2>
-          </Col>
-        </Row>
+      <div className="screen bg-primary">
+        <Container style={{ height: "100%" }}>
+          <Row style={{ height: "100%" }} className="align-items-center">
+            <Col>
+              <h1 className="display-4">Our mission</h1>
+              <p>
+                Nova Electric Racing is a D:DREAM Team of the Delft University
+                of Technology that consists of interdisciplinary and
+                international students. “The D:DREAM status is not something
+                that every student project receives. D:DREAM stands for ‘Delft:
+                Dream Realization of Extremely Advanced Machines.’ These
+                machines can be anything, from human powered submarines to
+                hydrogen driven race cars. They are characterized by the fact
+                that they are for example extremely fuel-efficient, powered on
+                sustainable energy or technically innovative.” – TU Delft
+              </p>
+              <Button variant="dark">READ MORE</Button>
+            </Col>
+            <Col></Col>
+          </Row>
+        </Container>
+      </div>
+
+      <div className="screen">
+        <NovaSponsors />
       </div>
     </Container>
   );

@@ -1,0 +1,15 @@
+.sponsors {
+  background-color: #fafafa;
+  color: #000000;
+  height: 100%;
+}
+
+.logo {
+  height: 10vh;
+  width: auto;
+}
+
+.logo:hover {
+  filter: brightness(1.07);
+  cursor: pointer;
+}

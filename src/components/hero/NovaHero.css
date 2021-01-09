@@ -20,6 +20,7 @@
 .herotext {
   margin-top: 100px;
   margin-left: 20px;
+  text-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
 }
 
 h1 {
@@ -34,11 +35,6 @@ h1 {
   height: 100%;
 }
 
-.herobutton {
-  border-radius: 0;
-  border-width: 2px;
-}
-
 .triangle-pol {
   fill: #3c6997;
 }
@@ -49,7 +45,7 @@ h1 {
   height: 90%;
   width: auto;
 
-  // center horizontally
+  /* center horizontally */
   left: 0;
   right: -100%;
   margin-left: auto;
@@ -78,9 +74,4 @@ h1 {
 .invis {
   visibility: hidden;
   z-index: -1;
-}
-
-.sponsors {
-  background-color: #fafafa;
-  color: #000000;
 }
