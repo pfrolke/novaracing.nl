@@ -1,13 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import NovaButton from "../NovaButton";
+import logo from "../../resources/LogoLargeWithText.png";
+import "./NovaMission.css";
 
 export default () => {
   return (
-    <Container style={{ height: "100%" }}>
-      <Row style={{ height: "100%" }} className="align-items-center">
-        <Col>
-          <h1 className="display-4">Our mission</h1>
+    <Container className="h-100 p-0">
+      <Row className="h-100 align-items-center">
+        <Col sm={6}>
+          <h1 className="display-3">Our mission</h1>
           <p>
             Nova Electric Racing is a D:DREAM Team of the Delft University of
             Technology that consists of interdisciplinary and international
@@ -21,7 +23,9 @@ export default () => {
           </p>
           <NovaButton variant="dark">READ MORE</NovaButton>
         </Col>
-        <Col></Col>
+        <Col sm="auto" className="mx-auto">
+          <img className="logo" alt="" src={logo} />
+        </Col>
       </Row>
     </Container>
   );

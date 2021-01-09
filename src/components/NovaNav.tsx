@@ -2,7 +2,7 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../resources/LOGO-white.png";
+import logo from "../resources/LogoLargeWithText.png";
 import "./NovaNav.css";
 
 const NovaNav = () => {
