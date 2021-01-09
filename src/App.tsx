@@ -4,6 +4,7 @@ import { createBrowserHistory } from "history";
 import Switch from "react-bootstrap/esm/Switch";
 import NovaNav from "./components/NovaNav";
 import NovaHero from "./components/hero/NovaHero";
+import "./App.css";
 
 const browserHistory = createBrowserHistory();
 

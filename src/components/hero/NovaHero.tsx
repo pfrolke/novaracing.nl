@@ -32,7 +32,7 @@ const NovaHero = () => {
       <div className="rellax polkadots" data-rellax-speed="2"></div>
       <div className="rellax stand" data-rellax-speed="8">
         <svg
-          className="stand"
+          className="stand triangle-svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"

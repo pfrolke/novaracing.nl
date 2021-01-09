@@ -23,7 +23,7 @@ export default () => {
           </p>
           <NovaButton variant="dark">READ MORE</NovaButton>
         </Col>
-        <Col sm="auto" className="mx-auto">
+        <Col className="mx-auto" sm="auto">
           <img className="logo" alt="" src={logo} />
         </Col>
       </Row>
