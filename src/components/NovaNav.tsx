@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import logo from "../resources/LOGO-white.png";
 import "./NovaNav.css";
 
-function NovaNav() {
+const NovaNav = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
       <Col>
@@ -39,6 +39,6 @@ function NovaNav() {
       </Navbar.Collapse>
     </Navbar>
   );
-}
+};
 
 export default NovaNav;

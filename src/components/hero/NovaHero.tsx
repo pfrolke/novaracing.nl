@@ -1,12 +1,14 @@
 import React, { RefObject, useEffect, useRef } from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Rellax from "rellax";
 import "./NovaHero.css";
 import zeromotor from "../../resources/zeromotor.png";
 import NovaSponsors from "./NovaSponsors";
-import MotorInfoPage from "./MotorInfoPage";
+import MotorInfo from "./MotorInfo";
+import NovaButton from "../NovaButton";
+import NovaMission from "./NovaMission";
 
-function NovaHero() {
+const NovaHero = () => {
   const screen2 = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -45,30 +47,11 @@ function NovaHero() {
 
       <div className="screen invis"></div>
       <div className="screen" ref={screen2}>
-        <MotorInfoPage />
+        <MotorInfo />
       </div>
 
       <div className="screen bg-primary">
-        <Container style={{ height: "100%" }}>
-          <Row style={{ height: "100%" }} className="align-items-center">
-            <Col>
-              <h1 className="display-4">Our mission</h1>
-              <p>
-                Nova Electric Racing is a D:DREAM Team of the Delft University
-                of Technology that consists of interdisciplinary and
-                international students. “The D:DREAM status is not something
-                that every student project receives. D:DREAM stands for ‘Delft:
-                Dream Realization of Extremely Advanced Machines.’ These
-                machines can be anything, from human powered submarines to
-                hydrogen driven race cars. They are characterized by the fact
-                that they are for example extremely fuel-efficient, powered on
-                sustainable energy or technically innovative.” – TU Delft
-              </p>
-              <Button variant="dark">READ MORE</Button>
-            </Col>
-            <Col></Col>
-          </Row>
-        </Container>
+        <NovaMission />
       </div>
 
       <div className="screen">
@@ -76,13 +59,13 @@ function NovaHero() {
       </div>
     </Container>
   );
-}
+};
 
 type HeroTextProps = {
   scrollToRef: RefObject<HTMLDivElement>;
 };
 
-function HeroText({ scrollToRef }: HeroTextProps) {
+const HeroText = ({ scrollToRef }: HeroTextProps) => {
   return (
     <Container fluid>
       <Row>
@@ -96,7 +79,7 @@ function HeroText({ scrollToRef }: HeroTextProps) {
               where there is no compromise between performance and
               sustainability.
             </p>
-            <Button
+            <NovaButton
               className="herobutton"
               variant="outline-light"
               onClick={(e) => {
@@ -105,13 +88,13 @@ function HeroText({ scrollToRef }: HeroTextProps) {
               }}
             >
               LEARN MORE
-            </Button>
+            </NovaButton>
           </div>
         </Col>
         <Col />
       </Row>
     </Container>
   );
-}
+};
 
 export default NovaHero;

@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import MotorInfoBubble from "./MotorInfoBubble";
 
-function MotorInfoPage() {
+const MotorInfo = () => {
   return (
     <Container style={{ height: "100%" }} fluid>
       <Row>
@@ -22,6 +22,6 @@ function MotorInfoPage() {
       </Row>
     </Container>
   );
-}
+};
 
-export default MotorInfoPage;
+export default MotorInfo;

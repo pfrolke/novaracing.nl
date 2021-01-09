@@ -3,7 +3,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import "./NovaSponsors.css";
 import { ReactComponent as StudLogo } from "../../resources/stud-logo.svg";
 
-function NovaSponsors() {
+const NovaSponsors = () => {
   return (
     <Container fluid className="sponsors p-5">
       <Row>
@@ -54,14 +54,14 @@ function NovaSponsors() {
       </Row>
     </Container>
   );
-}
+};
 
-function SponsorCard() {
+const SponsorCard = () => {
   return (
     <Col className="m-3" sm="auto">
       <StudLogo className="logo" />
     </Col>
   );
-}
+};
 
 export default NovaSponsors;

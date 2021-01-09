@@ -1,7 +1,7 @@
 import React from "react";
 import "./MotorInfoBubble.css";
 
-function MotorInfoBubble() {
+const MotorInfoBubble = () => {
   // const point = { x: 50, y: 30 };
 
   return (
@@ -26,6 +26,6 @@ function MotorInfoBubble() {
     //   />
     // </svg> */}
   );
-}
+};
 
 export default MotorInfoBubble;
