@@ -1,0 +1,17 @@
+.ft-cont {
+  position: relative;
+  background-color: var(--blue);
+}
+
+.ft-section > h5 {
+  color: var(--white);
+}
+
+.ft-section > a {
+  display: block;
+  color: var(--white);
+}
+
+.ft-logo {
+  width: 100%;
+}

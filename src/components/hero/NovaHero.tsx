@@ -8,6 +8,7 @@ import MotorInfo from "./MotorInfo";
 import NovaButton from "../NovaButton";
 import NovaMission from "./NovaMission";
 import NovaTeamSocial from "./NovaTeamSocial";
+import NovaFooter from "./NovaFooter";
 
 const NovaHero = () => {
   const screen2 = useRef<HTMLDivElement>(null);
@@ -62,6 +63,8 @@ const NovaHero = () => {
       <div className="screen">
         <NovaTeamSocial />
       </div>
+
+      <NovaFooter />
     </Container>
   );
 };
