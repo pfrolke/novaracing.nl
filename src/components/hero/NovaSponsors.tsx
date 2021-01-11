@@ -7,20 +7,16 @@ const NovaSponsors = () => {
   return (
     <Container fluid className="sponsors p-5">
       <Row>
-        <Col />
-        <Col sm="auto">
+        <Col sm="auto" className="mx-auto">
           <h1 className="display-4">Sponsors</h1>
         </Col>
-        <Col />
       </Row>
       <Row>
-        <Col />
-        <Col sm="auto">
+        <Col sm="auto" className="mx-auto">
           <p>
             Nova Electric Racing would not be possible without our sponsors.
           </p>
         </Col>
-        <Col />
       </Row>
 
       <Row className="justify-content-center">

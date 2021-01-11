@@ -1,35 +1,18 @@
 // Nova huisstijl colors
 $blue: #3c6997;
 $gray-800: #171717;
-$orange: #fe9000;
-$yellow: #ffdd4a;
-$cyan: #6ec1bb;
+$yellow: #ffde2d;
+$white: #fafafa;
 
 // set all other colors to white?
 $indigo: #ffffff;
 $purple: #ffffff;
 $pink: #ffffff;
 $red: #ffffff;
+$orange: #ffffff;
 $green: #ffffff;
 $teal: #ffffff;
-
-// set custom font styles
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap");
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lato", sans-serif !important;
-  font-weight: 900 !important;
-  text-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.4);
-}
-
-body {
-  font-family: "Lato", sans-serif !important;
-  font-weight: 300 !important;
-}
+$cyan: #ffffff;
 
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";

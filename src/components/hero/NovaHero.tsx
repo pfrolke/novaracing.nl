@@ -7,6 +7,7 @@ import NovaSponsors from "./NovaSponsors";
 import MotorInfo from "./MotorInfo";
 import NovaButton from "../NovaButton";
 import NovaMission from "./NovaMission";
+import NovaTeamSocial from "./NovaTeamSocial";
 
 const NovaHero = () => {
   const screen2 = useRef<HTMLDivElement>(null);
@@ -57,6 +58,10 @@ const NovaHero = () => {
       <div className="screen">
         <NovaSponsors />
       </div>
+
+      <div className="screen">
+        <NovaTeamSocial />
+      </div>
     </Container>
   );
 };
@@ -71,7 +76,7 @@ const HeroText = ({ scrollToRef }: HeroTextProps) => {
       <Row>
         <Col sm={4} className="align-self-center">
           <div className="herotext">
-            <h1>No Limits.</h1>
+            <h1 className="display-1">No Limits.</h1>
             <p>
               Since 2007, Nova Electric Racing has been pushing the boundaries
               of innovation by developing and racing high performance
