@@ -1,6 +1,5 @@
-import React, { RefObject, useEffect, useRef } from "react";
+import React, { RefObject, useEffect, useRef, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Rellax from "rellax";
 import "./NovaHero.css";
 import zeromotor from "../../resources/zeromotor.png";
 import NovaSponsors from "./NovaSponsors";
@@ -13,17 +12,22 @@ import NovaFooter from "./NovaFooter";
 const NovaHero = () => {
   const screen2 = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    new Rellax(".rellax", {
-      speed: -100,
-    });
+  const [startAnimation, setStartAnimation] = useState(true);
 
+  useEffect(() => {
+    // calculate scroll position as a fraction of the viewport height
     window.addEventListener(
       "scroll",
       () => {
         const scroll = window.scrollY / (screen2.current?.offsetHeight || 1);
 
         document.documentElement.style.setProperty("--scroll", String(scroll));
+
+        if (scroll >= 1) {
+          setStartAnimation(true);
+        } else if (scroll <= 0.8) {
+          setStartAnimation(false);
+        }
       },
       false
     );
@@ -31,8 +35,8 @@ const NovaHero = () => {
 
   return (
     <Container fluid className="heroContainer">
-      <div className="rellax polkadots" data-rellax-speed="2"></div>
-      <div className="rellax stand" data-rellax-speed="8">
+      <div className="polkadots" />
+      <div className="stand">
         <svg
           className="stand triangle-svg"
           xmlns="http://www.w3.org/2000/svg"
@@ -45,11 +49,11 @@ const NovaHero = () => {
         <HeroText scrollToRef={screen2} />
       </div>
 
-      <img alt="" className="motor" src={zeromotor}></img>
+      <img alt="" className="motor" src={zeromotor} />
 
       <div className="screen invis"></div>
       <div className="screen" ref={screen2}>
-        <MotorInfo />
+        <MotorInfo startAnimation={startAnimation} />
       </div>
 
       <div className="screen bg-primary">
@@ -57,11 +61,11 @@ const NovaHero = () => {
       </div>
 
       <div className="screen">
-        <NovaSponsors />
+        <NovaTeamSocial />
       </div>
 
       <div className="screen">
-        <NovaTeamSocial />
+        <NovaSponsors />
       </div>
 
       <NovaFooter />

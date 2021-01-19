@@ -1,0 +1,20 @@
+.motorInfo {
+  fill: var(--yellow);
+  stroke: var(--yellow);
+  filter: url("#shadow");
+}
+
+.motorInfoBubble > line {
+  fill: none;
+  stroke-width: 3;
+}
+
+.motorInfoBubble > rect {
+  stroke: none;
+}
+
+.motorInfoBubble > text {
+  stroke: none;
+  fill: var(--white);
+  font-size: 0.7rem;
+}
