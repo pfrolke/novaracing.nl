@@ -19,7 +19,8 @@ export default () => {
             human powered submarines to hydrogen driven race cars. They are
             characterized by the fact that they are for example extremely
             fuel-efficient, powered on sustainable energy or technically
-            innovative.” – TU Delft
+            innovative.”
+            <br />– TU Delft
           </p>
           <NovaButton variant="dark">READ MORE</NovaButton>
         </Col>

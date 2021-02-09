@@ -12,7 +12,7 @@ import NovaFooter from "./NovaFooter";
 const NovaHero = () => {
   const screen2 = useRef<HTMLDivElement>(null);
 
-  const [startAnimation, setStartAnimation] = useState(true);
+  const [startAnimation, setStartAnimation] = useState(false);
 
   useEffect(() => {
     // calculate scroll position as a fraction of the viewport height
@@ -61,11 +61,11 @@ const NovaHero = () => {
       </div>
 
       <div className="screen">
-        <NovaTeamSocial />
+        <NovaSponsors />
       </div>
 
       <div className="screen">
-        <NovaSponsors />
+        <NovaTeamSocial />
       </div>
 
       <NovaFooter />
