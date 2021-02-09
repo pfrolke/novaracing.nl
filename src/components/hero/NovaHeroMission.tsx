@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import NovaButton from "../NovaButton";
 import logo from "../../resources/LogoLargeWithText.png";
-import "./NovaMission.css";
+import "./NovaHeroMission.css";
 
 export default () => {
   return (

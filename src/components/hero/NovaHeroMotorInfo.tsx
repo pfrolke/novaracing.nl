@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./MotorInfo.css";
+import "./NovaHeroMotorInfo.css";
 
 type MotorInfoProps = {
   startAnimation: boolean;

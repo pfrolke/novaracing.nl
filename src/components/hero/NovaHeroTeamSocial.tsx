@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import NovaButton from "../NovaButton";
-import "./NovaTeamSocial.css";
+import "./NovaHeroTeamSocial.css";
 
 const NovaTeamSocial = () => {
   return (

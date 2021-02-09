@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import "./NovaSponsors.css";
+import "./NovaHeroSponsors.css";
 import BoxkingItLogo from "../../resources/sponsors/bokxingit-logo-300.jpg";
 import FactaLogo from "../../resources/sponsors/facta-logo-300.jpg";
 import LelyLogo from "../../resources/sponsors/lely-logo-300.jpg";

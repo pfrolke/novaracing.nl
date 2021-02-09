@@ -17,6 +17,10 @@ function App() {
         <Route exact path="/">
           <NovaHero />
         </Route>
+
+        <Route exact path="/about/">
+          <NovaHero />
+        </Route>
       </Switch>
     </Router>
   );

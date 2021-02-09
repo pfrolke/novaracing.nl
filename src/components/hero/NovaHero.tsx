@@ -2,12 +2,12 @@ import React, { RefObject, useEffect, useRef, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./NovaHero.css";
 import zeromotor from "../../resources/zeromotor.png";
-import NovaSponsors from "./NovaSponsors";
-import MotorInfo from "./MotorInfo";
+import NovaSponsors from "./NovaHeroSponsors";
+import MotorInfo from "./NovaHeroMotorInfo";
 import NovaButton from "../NovaButton";
-import NovaMission from "./NovaMission";
-import NovaTeamSocial from "./NovaTeamSocial";
-import NovaFooter from "./NovaFooter";
+import NovaMission from "./NovaHeroMission";
+import NovaTeamSocial from "./NovaHeroTeamSocial";
+import NovaFooter from "../NovaFooter";
 
 const NovaHero = () => {
   const screen2 = useRef<HTMLDivElement>(null);
