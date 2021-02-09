@@ -26,7 +26,7 @@ const NovaSponsors = () => {
         </Col>
       </Row>
 
-      <div className="spons-car">
+      <div className="car-cont">
         <SponsorCarousel />
       </div>
 
@@ -70,7 +70,7 @@ const SponsorCarousel = () => {
 
   return (
     <Container fluid className="my-5">
-      <Row className="spc" ref={rowRef}>
+      <Row className="sponsor-carousel" ref={rowRef}>
         <Col sm="4" className="my-auto">
           <a
             href="https://www.lely.com/"

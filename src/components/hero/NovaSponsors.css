@@ -4,13 +4,21 @@
   height: 100%;
 }
 
+.car-cont {
+  position: absolute;
+  width: 100%;
+  top: 55%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
 .sponsorlogo {
   scroll-snap-align: center;
   display: block;
   cursor: pointer;
 }
 
-.spc {
+.sponsor-carousel {
   height: 300px;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -18,7 +26,7 @@
   flex-wrap: nowrap;
 }
 
-.spc > .col {
+.sponsor-carousel > .col {
   height: 100%;
 }
 
@@ -38,12 +46,4 @@
 
 .car-nav-active {
   opacity: 0.8;
-}
-
-.spons-car {
-  position: absolute;
-  width: 100%;
-  top: 55%;
-  transform: translateY(-50%);
-  left: 0;
 }
