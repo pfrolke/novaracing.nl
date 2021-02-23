@@ -23,7 +23,7 @@ const NovaNav = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Col>
           <Nav className="justify-content-center">
-            <Nav.Link>About</Nav.Link>
+            <Nav.Link href="/about/">About</Nav.Link>
             <Nav.Link>Motorcycles</Nav.Link>
             <Nav.Link>Teams</Nav.Link>
             <Nav.Link>Sponsors</Nav.Link>

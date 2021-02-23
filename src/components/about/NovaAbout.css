@@ -1,0 +1,62 @@
+.history-img {
+  margin-top: 8%;
+}
+
+.about-bg {
+  height: 320vh;
+}
+
+.about-header.col-sm-auto {
+  border-right: var(--white) solid 4px;
+}
+
+.about-header.col a {
+  display: block;
+  color: grey;
+}
+
+.about-header.col a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.about-header-img {
+  position: absolute;
+  box-shadow: 0 0.4em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+.history-txt {
+  background-color: var(--blue);
+  margin-left: -10%;
+  margin-bottom: 8%;
+  margin-top: 2%;
+  margin-right: 7%;
+  box-shadow: 0 0.3em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+.ddream-txt {
+  background-color: var(--white);
+  color: black;
+}
+
+.ddream {
+  background-color: var(--white);
+}
+
+.ddream-vid {
+  box-shadow: 0 0.3em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+.about-riders {
+  margin-bottom: -3%;
+}
+
+.rider {
+  box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.5);
+  margin-bottom: 1em;
+}
+
+.rider img {
+  box-shadow: 0 0.3em 0.3em rgba(0, 0, 0, 0.5);
+  margin-bottom: 8px;
+}

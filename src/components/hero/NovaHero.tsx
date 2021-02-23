@@ -51,7 +51,7 @@ const NovaHero = () => {
 
       <img alt="" className="motor" src={zeromotor} />
 
-      <div className="screen invis"></div>
+      <div className="screen"></div>
       <div className="screen" ref={screen2}>
         <MotorInfo startAnimation={startAnimation} />
       </div>

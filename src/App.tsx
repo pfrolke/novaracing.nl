@@ -4,6 +4,7 @@ import { createBrowserHistory } from "history";
 import Switch from "react-bootstrap/esm/Switch";
 import NovaNav from "./components/NovaNav";
 import NovaHero from "./components/hero/NovaHero";
+import NovaAbout from "./components/about/NovaAbout";
 import "./App.css";
 
 const browserHistory = createBrowserHistory();
@@ -19,7 +20,7 @@ function App() {
         </Route>
 
         <Route exact path="/about/">
-          <NovaHero />
+          <NovaAbout />
         </Route>
       </Switch>
     </Router>
