@@ -2,10 +2,6 @@
   margin-top: 8%;
 }
 
-.about-bg {
-  height: 320vh;
-}
-
 .about-header.col-sm-auto {
   border-right: var(--white) solid 4px;
 }
