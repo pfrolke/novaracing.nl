@@ -32,7 +32,7 @@ const NovaNav = () => {
         </Col>
         <Col>
           <Nav className="justify-content-end">
-            <Nav.Link>Contact</Nav.Link>
+            <Nav.Link href="/contact/">Contact</Nav.Link>
             <Nav.Link>Apply now!</Nav.Link>
           </Nav>
         </Col>

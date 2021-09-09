@@ -5,6 +5,7 @@ import Switch from "react-bootstrap/esm/Switch";
 import NovaNav from "./components/NovaNav";
 import NovaHero from "./components/hero/NovaHero";
 import NovaAbout from "./components/about/NovaAbout";
+import NovaContact from "./components/contact/NovaContact";
 import "./App.css";
 
 const browserHistory = createBrowserHistory();
@@ -21,6 +22,10 @@ function App() {
 
         <Route exact path="/about/">
           <NovaAbout />
+        </Route>
+
+        <Route exact path="/contact/">
+          <NovaContact />
         </Route>
       </Switch>
     </Router>
